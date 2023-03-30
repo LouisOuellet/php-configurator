@@ -23,7 +23,7 @@ class phpConfigurator {
   public function __construct($File = null){
 
     // Set RootPath according to this file
-    $this->RootPath = dirname(__file__, 2);
+    $this->RootPath = realpath(getcwd());
 
     // If server document_root is available, use it instead
     if(isset($_SERVER['DOCUMENT_ROOT']) && !empty($_SERVER['DOCUMENT_ROOT'])){
