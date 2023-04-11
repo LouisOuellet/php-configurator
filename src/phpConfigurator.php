@@ -168,4 +168,15 @@ class phpConfigurator {
     // Return
     return $this;
   }
+
+  /**
+   * Get a Root Path.
+   *
+   * @return string $this->RootPath
+   */
+  public function root(){
+
+    // Return
+    return $this->RootPath;
+  }
 }
