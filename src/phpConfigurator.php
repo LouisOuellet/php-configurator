@@ -27,7 +27,7 @@ class phpConfigurator {
 
     // If server document_root is available, use it instead
     if(isset($_SERVER['DOCUMENT_ROOT']) && !empty($_SERVER['DOCUMENT_ROOT'])){
-      $this->RootPath = dirname($_SERVER['DOCUMENT_ROOT']);
+      $this->RootPath = $_SERVER['DOCUMENT_ROOT'];
     }
 
     // If constant ROOT_PATH has been set
